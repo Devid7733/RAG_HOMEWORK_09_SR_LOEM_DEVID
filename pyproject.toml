@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rag-baseline-app"
+version = "0.1.0"
+description = "Baseline Chat-with-Documents RAG application (teaching build)"
+authors = ["KSHRD AI Engineering"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+fastapi = "^0.115.0"
+uvicorn = { extras = ["standard"], version = "^0.30.0" }
+chromadb = "^1.5.9"
+ollama = "^0.4.0"
+pypdf = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
